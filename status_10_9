@@ -1,0 +1,16 @@
+Project Status as of 10/9:
+- INPUT: .mp4 file; OUTPUT: .csv file with RGB values
+- Mostly works, but could use some more testing
+  - Some frames cause issues in selecting the dosimeter; defaults to a loop of the wire occasionally.
+    - Michael: I think if you implement the changes you suggested for fixing this, it'll work.
+- See the notes below for some tips on running the program(s)
+
+NOTE 1: "rgb.py" is the file that contains the code and functions for the project. Place the file into a folder with a .mp4 video file to be analyzed, 
+navigate to the folder, and run using "python3 rgb.py". 
+
+NOTE 2: Included is also a file called "delete.py", which is useful to delete all .jpg files within the current directory. Be careful to not call it on a folder
+that contains pictures that you don't want to delete... learn from my experience lol.
+
+NOTE 3: To extract ALL frames for a video (30 FPS x <length of video> = a LOT of frames), enter '1' for all data when prompted. To extract only
+filtered frames (one frame every 10 seconds), enter '2' for filtered data when prompted.
+
